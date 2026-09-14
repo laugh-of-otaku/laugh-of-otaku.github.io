@@ -1,0 +1,38 @@
+title: 研究ノートと日記
+description: laugh-of-otakuの研究ノートと日々の記録。
+author: laugh-of-otaku
+url: https://laugh-of-otaku.github.io
+baseurl: ""
+lang: ja
+timezone: Asia/Tokyo
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /diary/:year/:month/:day/:title/
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: research
+    values:
+      section: research
+  - scope:
+      path: ""
+      type: posts
+    values:
+      section: diary
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - templates
+  - .bundle
+  - .gitignore
