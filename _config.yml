@@ -8,7 +8,7 @@ timezone: Asia/Tokyo
 markdown: kramdown
 kramdown:
   input: GFM
-permalink: /diary/:year/:month/:day/:title/
+permalink: /diary/:year/:month/
 collections:
   research:
     output: true
