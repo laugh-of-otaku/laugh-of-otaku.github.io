@@ -27,7 +27,7 @@
         <header class="article-header">
           <p class="eyebrow">{% if page.section == 'research' %}RESEARCH NOTES{% elsif page.section == 'diary' %}JOURNAL{% elsif page.section == 'about' %}ABOUT{% else %}NOTEBOOK{% endif %}</p>
           <h1>{{ page.title | escape }}</h1>
-          {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% endif %}
+          {% if page.date and page.collection != 'posts' %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% endif %}
         </header>
         <div class="prose">{{ content }}</div>
         {% if page.collection == 'research' %}<a class="back-link" href="{{ '/research/' | relative_url }}">← 研究ノート一覧へ</a>{% elsif page.collection == 'posts' %}<a class="back-link" href="{{ '/diary/' | relative_url }}">← 日記一覧へ</a>{% endif %}
