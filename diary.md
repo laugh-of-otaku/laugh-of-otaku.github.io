@@ -4,7 +4,7 @@ permalink: /diary/
 section: diary
 description: 日々の出来事と考えたことの記録。
 ---
-日々の出来事と、考えたこと。
+日常
 
 <ul class="entries">
 {% for post in site.posts %}

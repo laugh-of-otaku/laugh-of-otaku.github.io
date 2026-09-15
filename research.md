@@ -4,7 +4,7 @@ permalink: /research/
 section: research
 description: 学んだこと、問い、考察を残す研究ノート。
 ---
-学んだこと、問い、考察の記録。
+学び
 
 {% assign notes = site.research | sort: 'date' | reverse %}
 <ul class="entries">
