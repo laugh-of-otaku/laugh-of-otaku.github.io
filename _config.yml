@@ -8,6 +8,7 @@ timezone: Asia/Tokyo
 markdown: kramdown
 kramdown:
   input: GFM
+  math_engine: mathjax
 permalink: /diary/:year/:month/
 collections:
   research:
